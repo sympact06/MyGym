@@ -67,6 +67,6 @@ body, html {
     position: absolute;
     width: 50%;
     background-image: url("https://www.deboetzelaer.nl/resize/upload/12/1122/111021m%20boetzelaer%2007-PARTTHUMB.jpg");
-    background-repeat: space;
-    border-radius: 2rem;
+    background-size: cover;
+    border-radius: 40px;
 }

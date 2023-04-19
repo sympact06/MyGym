@@ -20,6 +20,7 @@ class SessieController extends Controller
         $sessie->sessienaam = $request->input('naam');
         $sessie->trainer = $request->input('trainer');
         $sessie->limiet_deelnemers = $request->input('max_deelnemers');
+        $sessie->gebruikers_deelnemend = 0;
         $sessie->starting = $request->input('starting');
         $sessie->save();
 

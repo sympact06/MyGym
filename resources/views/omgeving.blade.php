@@ -18,11 +18,12 @@
 </div>
 <div class="right">
     <div id="opkomend">
-        <h1>OPKOMENDE SESSIE:</h1>
+        <h1>SESSIE:</h1>
         <h2>Aquarobics met de omas</h2>
         <p>⏰ | 14:00-15:30</p>
         <p>🧑‍🏫 | Dhr. Peter Lijten</p>
     </div>
+
 </div>
 </body>
 </html>

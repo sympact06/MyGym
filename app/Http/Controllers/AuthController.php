@@ -9,6 +9,8 @@ class AuthController extends Controller
 {
     public function register(Request $request)
     {
+
+
         session_start();
         $gebruikersnaam = $request->input('gebruikersnaam');
         $wachtwoord = $request->input('password');
@@ -68,6 +70,10 @@ class AuthController extends Controller
     public function gebruikersInfo()
     {
         session_start();
+
+        if (!isset($_SESSION['gebruikersnaam'])) {
+            return redirect()->route('login');
+        }
         $gebruikersnaam = $_SESSION['gebruikersnaam'];
         $abonnementsid = gebruikers::where('gebruikersnaam', $gebruikersnaam)->first()->abonnementsid;
         $caps_gebruikersnaam = strtoupper($gebruikersnaam);

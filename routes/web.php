@@ -6,7 +6,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    if (isset($_COOKIE['gebruikersnaam'])) {
+    session_start();
+    if (isset($_SESSION['gebruikersnaam'])) {
         return redirect()->route('mijn');
     } else {
         return view('login');
@@ -37,7 +38,7 @@ Route::get('/mijn', [AuthController::class, 'gebruikersInfo'], function () {
     }
 })->name('mijn');
 
-Route::get('/maak', function () {
+Route::get('/trainer/maak', function () {
     return view('create');
 });
 
