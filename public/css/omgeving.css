@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+
+body, html {
+    top: 0;
+    font-family: 'Montserrat', sans-serif;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    margin: 0;
+    height: 100%;
+    position: absolute;
+}
+
+.left {
+    background-color: rgba(230,0,126,255);
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 90%;
+    width: 20%;
+    padding: 2.5%;
+}
+
+.left > h5 {
+    font-weight: lighter;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.left > button {
+    width: 100%;
+    padding: 1rem;
+    font-size: x-large;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.left > button:hover {
+    background-color: black;
+    color: rgba(230,0,126,255);
+}
+
+.right {
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    position: absolute;
+}
+
+#opkomend {
+    top: 10%;
+    backdrop-filter: blur(10rem);
+    left: 50%;
+    color: white;
+    padding: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 50%;
+    background-image: url("https://www.deboetzelaer.nl/resize/upload/12/1122/111021m%20boetzelaer%2007-PARTTHUMB.jpg");
+    background-repeat: space;
+    border-radius: 2rem;
+}
