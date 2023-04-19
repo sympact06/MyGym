@@ -20,7 +20,7 @@ class AuthController extends Controller
 
         $_SESSION['gebruikersnaam'] = $gebruikersnaam;
 
-        return redirect()->route('home');
+        return redirect()->route('mijn');
 
 
     }
@@ -37,7 +37,7 @@ class AuthController extends Controller
 
             if ($gebruiker->wachtwoord == $wachtwoord) {
                 $_SESSION['gebruikersnaam'] = $gebruikersnaam;
-                return redirect()->back();
+                return redirect()->route('mijn');
             } else {
                 return response()->json([
                     'message' => 'Incorrect password'
