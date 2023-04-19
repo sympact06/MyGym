@@ -37,8 +37,9 @@ Route::get('/mijn', [AuthController::class, 'gebruikersInfo'], function () {
     }
 })->name('mijn');
 
-
-
+Route::get('/maak', function () {
+    return view('create');
+});
 
 Route::post('/api/register', [AuthController::class, 'register']);
 Route::post('/api/login', [AuthController::class, 'login']);
