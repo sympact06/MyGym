@@ -9,6 +9,7 @@ class AuthController extends Controller
 {
     public function register(Request $request)
     {
+        session_start();
         $gebruikersnaam = $request->input('gebruikersnaam');
         $wachtwoord = $request->input('password');
 
