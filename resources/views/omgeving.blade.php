@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="{{ asset('css/omgeving.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/createEvent.js')  }}" defer></script>
 </head>
 <body>
 <div class="left">
@@ -14,16 +15,16 @@
     <button>ACCOUNT</button><br>
     <button>LIDMAATSCHAPPEN</button><br>
     <button>GESCHIEDENIS</button><br>
+    <button>SESSIES</button>
     <h5>©️ Big Gym</h5>
 </div>
 <div class="right">
     <div id="opkomend">
         <h1>SESSIE:</h1>
         <h2>Aquarobics met de omas</h2>
-        <p>⏰ | 14:00-15:30</p>
+        <h3>⏰ | 14:00-15:30</h3>
         <p>🧑‍🏫 | Dhr. Peter Lijten</p>
     </div>
-
 </div>
 </body>
 </html>

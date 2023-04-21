@@ -42,6 +42,10 @@ Route::get('/trainer/maak', function () {
     return view('create');
 });
 
+Route::get("/mijn/sessies", function() {
+    return view('alleSessies');
+});
+
 Route::post('/api/register', [AuthController::class, 'register']);
 Route::post('/api/login', [AuthController::class, 'login']);
 Route::post('/api/checkLogin', [AuthController::class, 'checkLogin']);
